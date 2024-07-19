@@ -647,6 +647,7 @@ body {
     position: absolute;
     left: 7.91%;
     right: 77.1%;
+    width: 169px;
     top: 9%;
     font-family: 'Poppins';
     font-weight: 600;
@@ -831,17 +832,17 @@ body {
     top: 55.05px;
 }
 .img_zone-6 .Rectangle_6 h1{
-        position: absolute;
-        width: 433px;
-        height: 12px;
-        left: 175px;
-        top: 30px;
-        font-family: 'Noto Sans Thai';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 12px;
-        color: #FFFFFF;
+    position: absolute;
+    width: 433px;
+    height: 12px;
+    left: 175px;
+    top: 30px;
+    font-family: 'Noto Sans Thai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 12px;
+    color: #FFFFFF;
 }
 .img_zone-6 .Rectangle_6 h2 {
     position: absolute;
@@ -902,10 +903,19 @@ body {
     left: 25px;
     box-shadow: 0px 2px 20px rgba(65, 115, 174, 0.25);
     border-radius: 16px;
-    border: 2px solid;
-    border-image-source: linear-gradient(0deg, rgba(21, 47, 155, 0) 14.25%, #34EA67 108.25%);
 }
 
+.img_zone-7 .Rectangle_7-border{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1089px;
+    height: 345px;
+    left: 20px;
+    border: 3px solid ;
+    border-image-source: linear-gradient(0deg, rgba(21, 47, 155, 0) 14.25%, #34EA67 108.25%);
+    border-image-slice: 2;
+    transform: rotate(180deg);
+}
 .img_zone-7 .Rectangle_7 h1{
     position: absolute;
     top: 20px;
@@ -1137,10 +1147,230 @@ body {
      color: #3138A0;
 }
 
-/* สำหรับหน้าจอขนาดเล็ก เช่น มือถือ */
 
-/* สำหรับหน้าจอขนาดกลาง เช่น แท็บเล็ต */
-@media (min-width: 601px) and (max-width: 1200px) {
+/* สำหรับหน้าจอขนาดไม่เกิน 600px*/
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Noto Sans Thai', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    
+    }
+    
+    header,
+    main,
+    footer {
+    position: absolute;
+    left: -120px;
+    padding: 20px;
+    }
+    
+    .header h1,
+    .main h1,
+    .footer h1 {
+        font-size: 3.5rem;
+    }
+    
+    header img,
+    main img,
+    footer img {
+        width: 100%;
+        height: auto;
+    }
+    
+        .header .date,
+        .header .time,
+        .header .line,
+        .header .text1,
+        .header .section,
+        .header .section-content {
+            text-align: left;
+    
+        }
+    
+    
+    .text_grop h2,
+    .text_grop h3,
+    .text_grop8 h2,
+    .text_grop8 h3,
+    .text_grop-8 p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    .text_grop1 p {
+        font-size: 1rem;
+    }
+    
+    .rectangle134_img {
+        position: absolute;
+        top: 125px;
+
+    }
+    
+    .header {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+    }
+    
+    .img-zone-2 .rectangle {
+        padding: 20px;
+        max-width: 95.8%;
+        position: absolute;
+        height: 160px;
+    
+    
+    }
+    
+    .img-zone-2 {
+        padding: 20px;
+        max-width: 90%;
+        position: absolute;
+        width: 83.6%;
+        left: 17.8%;
+        height: 160px;
+    
+    }
+    
+    .img_zone-3 {
+        position: absolute;
+        width: 1030.6px;
+        height: 420px;
+        top: 868px;
+        left: 207px;
+    }
+    
+    .bg_zone-4 {
+        position: absolute;
+        width: 1030px;
+        height: 837px;
+        left: 207px;
+    }
+    
+    .bg_zone-4 .text1 {
+        position: absolute;
+        right: 69.48%;
+        top: 5.56%;
+    }
+    
+    .img_zone-5 {
+        position: absolute;
+        width: 1030px;
+        height: 744px;
+        left: 207px;
+    }
+    
+    .img_zone-5 .box1,
+    .img_zone-5 .box2,
+    .img_zone-5 .box3 {
+        position: absolute;
+        width: 970px;
+    
+    }
+    
+    .img_zone-6 {
+        position: absolute;
+        width: 1030px;
+        height: 367px;
+        left: 207px;
+    
+    }
+    
+    .img_zone-6 .Rectangle_6 {
+        position: absolute;
+        width: 1030px;
+        left: 2px;
+    }
+    
+    .img_zone-6 .Rectangle_6 .image6 {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        left: 720px;
+    
+    }
+    
+    .img_zone-7 {
+        position: absolute;
+        width: 1030px;
+        height: 367px;
+        left: 207px;
+    }
+    
+    .img_zone-7 .Rectangle_7 {
+        box-sizing: border-box;
+        position: absolute;
+        width: 1030px;
+        left: 2px;
+    }
+    .img_zone-7 .Rectangle_7-border {
+        box-sizing: border-box;
+        position: absolute;
+        width: 1032px;
+        left: -1px;
+        border: 3px solid;
+        border-image-source: linear-gradient(0deg, rgba(21, 47, 155, 0) 14.25%, #34EA67 108.25%);
+        border-image-slice: 2;
+        transform: rotate(180deg);
+    }
+    
+    .img_zone-7 .Rectangle_7 .text_bulk h2 {
+        position: absolute;
+        width: 250px;
+        left: -21px;
+    }
+    
+    .img_zone-7 .Rectangle_7 .text_bulk span {
+        position: absolute;
+        width: 250px;
+        left: -21px;
+        top: 55px;
+    }
+    
+    .img_zone-8 {
+        position: absolute;
+        width: 1030px;
+        left: 207px;
+    
+    }
+    
+    .img_zone-8 .text_grop8 h2 {
+        position: absolute;
+        left: 340px;
+    }
+    
+    .img_zone-8 .text_grop8 h3 {
+        position: absolute;
+        left: 560px;
+    }
+    
+    .img_zone-8 .text_grop-8 {
+        position: absolute;
+        left: 240px;
+    }
+    
+    .img_zone-8 .button8 {
+        position: absolute;
+        left: 245px;
+    }
+    
+    .img_zone-9 {
+        position: absolute;
+        width: 1140px;
+        height: 67px;
+        left: 150.0px;
+    }
+}
+
+/* สำหรับหน้าจอขนาด 601-1200px*/
+@media only screen and (min-width: 601px) and (max-width: 1201px) {
     body {
         font-family: 'Noto Sans Thai', sans-serif;
         padding: 0;
@@ -1157,14 +1387,14 @@ body {
     main,
     footer {
         position: absolute;
-        left: -80px;
+        left: -130px;
         padding: 20px;
     }
 
-    header h1,
-    main h1,
-    footer h1 {
-        font-size: 2rem;
+    .header h1,
+    .main h1,
+    .footer h1 {
+        font-size: 3.5rem;
     }
 
     header img,
@@ -1184,23 +1414,6 @@ body {
         
     }
 
-   
-    .img-zone-3,
-    .img-zone-4,
-    .img-zone-5,
-    .img-zone-6,
-    .img-zone-7,
-    .img-zone-8,
-    .img-zone-9 {
-
-    }
-
-    .text_ipad,
-    .text_apple,
-    .text_bulk {
-        text-align: center;
-        margin: 10px 0;
-    }
 
     .text_grop h2,
     .text_grop h3,
@@ -1228,6 +1441,7 @@ body {
         padding: 20px;
         max-width: 95.8%;
         position: absolute;
+        height: 160px;
 
         
     }
@@ -1237,7 +1451,345 @@ body {
         position: absolute;
         width: 83.6%;
         left: 17.8%;
+        height: 160px;
+        
     }
+    .img_zone-3 {
+        position: absolute;
+        width: 1030.6px;
+        height: 420px;
+        top: 868px;
+        left: 207px;
+    }
+    
+    .bg_zone-4 {
+        position: absolute;
+        width: 1030px;
+        height: 837px;
+        left: 207px;
+
+    }
+    .bg_zone-4 .text1 {
+        position: absolute;
+        right: 69.48%;
+        top: 5.56%;
+    }
+    .img_zone-5 {
+        position: absolute;
+        width: 1030px;
+        height: 744px;
+        left: 207px;
+    }
+    .img_zone-5 .box1,
+    .img_zone-5 .box2, 
+    .img_zone-5 .box3{
+        position: absolute;
+        width: 970px;
+
+    }
+    .img_zone-6 {
+        position: absolute;
+        width: 1030px;
+        height: 367px;
+        left: 207px;
+ 
+    }
+    .img_zone-6 .Rectangle_6 {
+        position: absolute;
+        width: 1030px;
+        left: 2px;
+    }
+    .img_zone-6 .Rectangle_6 .image6 {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        left: 720px;
+
+    }
+    .img_zone-7 {
+        position: absolute;
+        width: 1030px;
+        height: 367px;
+        left: 207px;
+    }
+    .img_zone-7 .Rectangle_7 {
+        box-sizing: border-box;
+        position: absolute;
+        width: 1030px;
+        left: 2px;
+    }
+    .img_zone-7 .Rectangle_7-border {
+        box-sizing: border-box;
+        position: absolute;
+        width: 1033px;
+        left: -1px;
+        border: 3px solid;
+        border-image-source: linear-gradient(0deg, rgba(21, 47, 155, 0) 14.25%, #34EA67 108.25%);
+        border-image-slice: 2;
+        transform: rotate(180deg);
+    }
+    .img_zone-7 .Rectangle_7 .text_bulk h2 {
+        position: absolute;
+        width: 250px;
+        left: -21px;
+    }
+    .img_zone-7 .Rectangle_7 .text_bulk span {
+        position: absolute;
+        width: 250px;
+        left: -21px;
+        top: 55px;
+    }
+    .img_zone-8 {
+        position: absolute;
+        width: 1030px;
+        left: 207px;
+        
+    }
+    .img_zone-8 .text_grop8 h2{
+        position: absolute;
+        left: 340px;
+    }
+    .img_zone-8 .text_grop8 h3 {
+        position: absolute;
+        left: 560px;
+    }
+    .img_zone-8 .text_grop-8 {
+        position: absolute;
+        left: 240px;
+    }
+    .img_zone-8 .button8 {
+        position: absolute;
+        left: 245px;
+    }
+    .img_zone-9 {
+        position: absolute;
+        width: 1140px;
+        height: 67px;
+        left: 150.0px;
+    }
+
+}
+/* สำหรับหน้าจอขนาด 1201-1500px */
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    body {
+            font-family: 'Noto Sans Thai', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        .container {
+            padding: 20px;
+            max-width: 90%;
+    
+        }
+    
+        header,
+        main,
+        footer {
+            position: absolute;
+            left: -110px;
+            padding: 20px;
+        }
+    
+        .header h1,
+        .main h1,
+        .footer h1 {
+            font-size: 3.5rem;
+        }
+    
+        header img,
+        main img,
+        footer img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .header .date,
+        .header .time,
+        .header .line,
+        .header .text1,
+        .header .section,
+        .header .section-content {
+            text-align: left;
+    
+        }
+    
+    
+        .text_grop h2,
+        .text_grop h3,
+        .text_grop8 h2,
+        .text_grop8 h3,
+        .text_grop-8 p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    
+        .text_grop1 p {
+            font-size: 1rem;
+        }
+    
+        .rectangle134_img {
+            position: absolute;
+            top: 125px;
+    
+        }
+    
+        .header {
+            position: absolute;
+            top: 60%;
+            left: 40%;
+        }
+    
+        .img-zone-2 .rectangle {
+            padding: 20px;
+            max-width: 95.8%;
+            position: absolute;
+            height: 160px;
+    
+    
+        }
+    
+        .img-zone-2 {
+            padding: 20px;
+            max-width: 90%;
+            position: absolute;
+            width: 83.6%;
+            left: 17.8%;
+            height: 160px;
+    
+        }
+    
+        .img_zone-3 {
+            position: absolute;
+            width: 1030.6px;
+            height: 420px;
+            top: 868px;
+            left: 207px;
+        }
+    
+        .bg_zone-4 {
+            position: absolute;
+            width: 1030px;
+            height: 837px;
+            left: 207px;
+    
+        }
+    
+        .bg_zone-4 .text1 {
+            position: absolute;
+            right: 69.48%;
+            top: 5.56%;
+        }
+    
+        .img_zone-5 {
+            position: absolute;
+            width: 1030px;
+            height: 744px;
+            left: 207px;
+        }
+    
+        .img_zone-5 .box1,
+        .img_zone-5 .box2,
+        .img_zone-5 .box3 {
+            position: absolute;
+            width: 970px;
+    
+        }
+    
+        .img_zone-6 {
+            position: absolute;
+            width: 1030px;
+            height: 367px;
+            left: 207px;
+    
+        }
+    
+        .img_zone-6 .Rectangle_6 {
+            position: absolute;
+            width: 1030px;
+            left: 2px;
+        }
+    
+        .img_zone-6 .Rectangle_6 .image6 {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            left: 720px;
+    
+        }
+    
+        .img_zone-7 {
+            position: absolute;
+            width: 1030px;
+            height: 367px;
+            left: 207px;
+        }
+    
+        .img_zone-7 .Rectangle_7 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 1030px;
+            left: 2px;
+        }
+
+        .img_zone-7 .Rectangle_7-border {
+            box-sizing: border-box;
+            position: absolute;
+            width: 1033px;
+            left: -1px;
+            border: 3px solid;
+            border-image-source: linear-gradient(0deg, rgba(21, 47, 155, 0) 14.25%, #34EA67 108.25%);
+            border-image-slice: 2;
+            transform: rotate(180deg);
+        }
+    
+        .img_zone-7 .Rectangle_7 .text_bulk h2 {
+            position: absolute;
+            width: 250px;
+            left: -21px;
+        }
+    
+        .img_zone-7 .Rectangle_7 .text_bulk span {
+            position: absolute;
+            width: 250px;
+            left: -21px;
+            top: 55px;
+        }
+    
+        .img_zone-8 {
+            position: absolute;
+            width: 1030px;
+            left: 207px;
+    
+        }
+    
+        .img_zone-8 .text_grop8 h2 {
+            position: absolute;
+            left: 340px;
+        }
+    
+        .img_zone-8 .text_grop8 h3 {
+            position: absolute;
+            left: 560px;
+        }
+    
+        .img_zone-8 .text_grop-8 {
+            position: absolute;
+            left: 240px;
+        }
+    
+        .img_zone-8 .button8 {
+            position: absolute;
+            left: 245px;
+        }
+    
+        .img_zone-9 {
+            position: absolute;
+            width: 1140px;
+            height: 67px;
+            left: 150.0px;
+        }
 }
 
 
